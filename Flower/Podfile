@@ -1,0 +1,11 @@
+platform :ios, '13.0'
+
+target 'WhatFlower' do
+ 
+  use_frameworks!
+
+  # Pods for WhatFlower
+  pod 'Alamofire', '~> 5.5'
+  pod 'SDWebImage'
+
+end

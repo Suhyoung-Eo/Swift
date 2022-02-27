@@ -1,0 +1,8 @@
+.DS_Store
+Pods
+WhatFlower/Resources/FlowerClassifier.mlmodel
+
+## User settings
+xcuserdata/
+xcshareddata/
+xcdebugger/

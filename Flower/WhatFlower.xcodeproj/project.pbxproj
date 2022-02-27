@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D5C67FEAD24228D00EB15167 /* Pods_WhatFlower.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E71746F394E6AA10C5E8C0B /* Pods_WhatFlower.framework */; };
+		FE24AC532723DD8400755745 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24AC522723DD8400755745 /* AppDelegate.swift */; };
+		FE24AC552723DD8400755745 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24AC542723DD8400755745 /* SceneDelegate.swift */; };
+		FE24AC572723DD8400755745 /* WhatFlowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24AC562723DD8400755745 /* WhatFlowerViewController.swift */; };
+		FE24AC5A2723DD8400755745 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE24AC582723DD8400755745 /* Main.storyboard */; };
+		FE24AC5C2723DD8500755745 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE24AC5B2723DD8500755745 /* Assets.xcassets */; };
+		FE24AC5F2723DD8500755745 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE24AC5D2723DD8500755745 /* LaunchScreen.storyboard */; };
+		FE24AC672723DD9500755745 /* FlowerClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FE24AC662723DD9500755745 /* FlowerClassifier.mlmodel */; };
+		FE24AC6D27250FBB00755745 /* FlowerDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24AC6C27250FBB00755745 /* FlowerDataManager.swift */; };
+		FE24AC6F2725101400755745 /* FlowerDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24AC6E2725101400755745 /* FlowerDataModel.swift */; };
+		FE24AC71272532B000755745 /* FlowerDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24AC70272532B000755745 /* FlowerDataViewModel.swift */; };
+		FE49C876278CEE70003320A5 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE49C875278CEE70003320A5 /* K.swift */; };
+		FE49C878278CF9E1003320A5 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE49C877278CF9E1003320A5 /* AlertService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4E71746F394E6AA10C5E8C0B /* Pods_WhatFlower.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatFlower.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B63A0D74FB0F92DF5EF27131 /* Pods-WhatFlower.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatFlower.release.xcconfig"; path = "Target Support Files/Pods-WhatFlower/Pods-WhatFlower.release.xcconfig"; sourceTree = "<group>"; };
+		B693F89514C78C6DE3F59869 /* Pods-WhatFlower.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatFlower.debug.xcconfig"; path = "Target Support Files/Pods-WhatFlower/Pods-WhatFlower.debug.xcconfig"; sourceTree = "<group>"; };
+		FE24AC4F2723DD8400755745 /* WhatFlower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatFlower.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE24AC522723DD8400755745 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE24AC542723DD8400755745 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FE24AC562723DD8400755745 /* WhatFlowerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatFlowerViewController.swift; sourceTree = "<group>"; };
+		FE24AC592723DD8400755745 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE24AC5B2723DD8500755745 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE24AC5E2723DD8500755745 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE24AC602723DD8500755745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE24AC662723DD9500755745 /* FlowerClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlowerClassifier.mlmodel; sourceTree = "<group>"; };
+		FE24AC6C27250FBB00755745 /* FlowerDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerDataManager.swift; sourceTree = "<group>"; };
+		FE24AC6E2725101400755745 /* FlowerDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerDataModel.swift; sourceTree = "<group>"; };
+		FE24AC70272532B000755745 /* FlowerDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerDataViewModel.swift; sourceTree = "<group>"; };
+		FE49C875278CEE70003320A5 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		FE49C877278CF9E1003320A5 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE24AC4C2723DD8400755745 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5C67FEAD24228D00EB15167 /* Pods_WhatFlower.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7AC29E44C8ED41FEBD49A557 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B693F89514C78C6DE3F59869 /* Pods-WhatFlower.debug.xcconfig */,
+				B63A0D74FB0F92DF5EF27131 /* Pods-WhatFlower.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FD9721D959C3D662225A950A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E71746F394E6AA10C5E8C0B /* Pods_WhatFlower.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE24AC462723DD8400755745 = {
+			isa = PBXGroup;
+			children = (
+				FE24AC512723DD8400755745 /* WhatFlower */,
+				FE24AC502723DD8400755745 /* Products */,
+				7AC29E44C8ED41FEBD49A557 /* Pods */,
+				FD9721D959C3D662225A950A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FE24AC502723DD8400755745 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE24AC4F2723DD8400755745 /* WhatFlower.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE24AC512723DD8400755745 /* WhatFlower */ = {
+			isa = PBXGroup;
+			children = (
+				FE24AC602723DD8500755745 /* Info.plist */,
+				FE49C874278CEC35003320A5 /* Resources */,
+				FE49C873278CEBFE003320A5 /* AppDelegates */,
+				FE24AC6A27250F2700755745 /* Models */,
+				FE24AC6827250EF100755745 /* View */,
+				FE49C872278CEBC5003320A5 /* ViewModels */,
+				FE49C879278D00C4003320A5 /* SupportFiles */,
+			);
+			path = WhatFlower;
+			sourceTree = "<group>";
+		};
+		FE24AC6827250EF100755745 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE24AC582723DD8400755745 /* Main.storyboard */,
+				FE24AC562723DD8400755745 /* WhatFlowerViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE24AC6A27250F2700755745 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FE49C875278CEE70003320A5 /* K.swift */,
+				FE24AC6E2725101400755745 /* FlowerDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FE49C872278CEBC5003320A5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FE24AC70272532B000755745 /* FlowerDataViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FE49C873278CEBFE003320A5 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				FE24AC522723DD8400755745 /* AppDelegate.swift */,
+				FE24AC542723DD8400755745 /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		FE49C874278CEC35003320A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FE24AC5B2723DD8500755745 /* Assets.xcassets */,
+				FE24AC662723DD9500755745 /* FlowerClassifier.mlmodel */,
+				FE24AC5D2723DD8500755745 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FE49C879278D00C4003320A5 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FE49C877278CF9E1003320A5 /* AlertService.swift */,
+				FE24AC6C27250FBB00755745 /* FlowerDataManager.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE24AC4E2723DD8400755745 /* WhatFlower */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE24AC632723DD8500755745 /* Build configuration list for PBXNativeTarget "WhatFlower" */;
+			buildPhases = (
+				1F18F93CD14F0439C9447A4F /* [CP] Check Pods Manifest.lock */,
+				FE24AC4B2723DD8400755745 /* Sources */,
+				FE24AC4C2723DD8400755745 /* Frameworks */,
+				FE24AC4D2723DD8400755745 /* Resources */,
+				3AC66F280C800B62B2B33C3F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhatFlower;
+			productName = WhatFlower;
+			productReference = FE24AC4F2723DD8400755745 /* WhatFlower.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE24AC472723DD8400755745 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					FE24AC4E2723DD8400755745 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = FE24AC4A2723DD8400755745 /* Build configuration list for PBXProject "WhatFlower" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE24AC462723DD8400755745;
+			productRefGroup = FE24AC502723DD8400755745 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE24AC4E2723DD8400755745 /* WhatFlower */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE24AC4D2723DD8400755745 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE24AC5F2723DD8500755745 /* LaunchScreen.storyboard in Resources */,
+				FE24AC5C2723DD8500755745 /* Assets.xcassets in Resources */,
+				FE24AC5A2723DD8400755745 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F18F93CD14F0439C9447A4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhatFlower-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AC66F280C800B62B2B33C3F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhatFlower/Pods-WhatFlower-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhatFlower/Pods-WhatFlower-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WhatFlower/Pods-WhatFlower-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE24AC4B2723DD8400755745 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE24AC672723DD9500755745 /* FlowerClassifier.mlmodel in Sources */,
+				FE24AC6D27250FBB00755745 /* FlowerDataManager.swift in Sources */,
+				FE24AC572723DD8400755745 /* WhatFlowerViewController.swift in Sources */,
+				FE24AC71272532B000755745 /* FlowerDataViewModel.swift in Sources */,
+				FE24AC532723DD8400755745 /* AppDelegate.swift in Sources */,
+				FE49C876278CEE70003320A5 /* K.swift in Sources */,
+				FE24AC552723DD8400755745 /* SceneDelegate.swift in Sources */,
+				FE49C878278CF9E1003320A5 /* AlertService.swift in Sources */,
+				FE24AC6F2725101400755745 /* FlowerDataModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FE24AC582723DD8400755745 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE24AC592723DD8400755745 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE24AC5D2723DD8500755745 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE24AC5E2723DD8500755745 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE24AC612723DD8500755745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FE24AC622723DD8500755745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE24AC642723DD8500755745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B693F89514C78C6DE3F59869 /* Pods-WhatFlower.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NYS62N9WB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhatFlower/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.otter618.WhatFlower;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE24AC652723DD8500755745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B63A0D74FB0F92DF5EF27131 /* Pods-WhatFlower.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NYS62N9WB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhatFlower/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.otter618.WhatFlower;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE24AC4A2723DD8400755745 /* Build configuration list for PBXProject "WhatFlower" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE24AC612723DD8500755745 /* Debug */,
+				FE24AC622723DD8500755745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE24AC632723DD8500755745 /* Build configuration list for PBXNativeTarget "WhatFlower" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE24AC642723DD8500755745 /* Debug */,
+				FE24AC652723DD8500755745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE24AC472723DD8400755745 /* Project object */;
+}
